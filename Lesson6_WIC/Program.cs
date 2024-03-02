@@ -9,20 +9,20 @@
 
         private static void DelegatesWIC()
         {
-            var l = new ObservableLimitedList(ContainsS);
-            l.OnListChange += PrintNewItem;
-            l.TryAdd("Yoav");
-            l.TryAdd("Iris");
-            l.TryAdd("Daniel");
-            l.TryAdd("Ido");
-            l.TryAdd("Sapir");
-            l.TryAdd("Ester");
-            l.TryAdd("Dor");
-            l.TryAdd("Noga");
-            l.TryAdd("John");
-            l.TryAdd("Max");
-            l.PrintAll();
-
+            var listOfS = new ObservableLimitedList(ContainsS);
+            listOfS.OnListChange += PrintNewItem;
+            listOfS.TryAdd("Yoav");
+            listOfS.TryAdd("Iris");
+            listOfS.TryAdd("Daniel");
+            listOfS.TryAdd("Ido");
+            listOfS.TryAdd("Sapir");
+            listOfS.TryAdd("Ester");
+            listOfS.TryAdd("Dor");
+            listOfS.TryAdd("Noga");
+            listOfS.TryAdd("John");
+            listOfS.TryAdd("Max");
+            listOfS.PrintAll();
+        
             bool ContainsS(string str)
             {
                 return str.Contains('s') || str.Contains('S');
