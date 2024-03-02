@@ -60,8 +60,8 @@
             "Subtract",
             "Multiply",
             "POW",
-            "AND",
-            "OR"});
+            "Binary_AND",
+            "Binary_OR"});
             this.comboBox1.Location = new System.Drawing.Point(273, 88);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
