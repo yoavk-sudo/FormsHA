@@ -33,10 +33,10 @@ namespace FormsHA
                 case "POW":
                     _pc = new Operands.PerformCalculation(Operands.Pow);
                     break;
-                case "AND":
+                case "Binary_AND":
                     _pc = new Operands.PerformCalculation(Operands.And);
                     break;
-                case "OR":
+                case "Binary_OR":
                     _pc = new Operands.PerformCalculation(Operands.Or);
                     break;
                 default:
