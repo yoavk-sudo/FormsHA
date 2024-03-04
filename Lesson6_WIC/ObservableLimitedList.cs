@@ -28,10 +28,7 @@ namespace Lesson6_WIC
                 Console.WriteLine(str);
             }
         }
-        public static int operator +(ObservableLimitedList a, int b)
-        {
-            return 0;
-        }
+
         public event Action<string> OnListChange;
         private Predicate<string> _stringCondition;
     }
